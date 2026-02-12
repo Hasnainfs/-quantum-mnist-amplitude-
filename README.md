@@ -32,6 +32,19 @@ This project demonstrates a **hybrid quantum-classical neural network** built wi
 
 ---
 
-## 📊 Training Performance
+### Technical Specifications
 
-### Complete Training Log
+| Component | Selection | Rationale |
+|-----------|-----------|-----------|
+| **Device** | `default.qubit` | Fast simulation, production ready |
+| **Embedding** | `AmplitudeEmbedding` | 2ⁿ features → n qubits, max density |
+| **Variational** | `StronglyEntanglingLayers` | Max expressivity, proven performance |
+| **Depth** | 6 layers | Sufficient complexity, no overfitting |
+| **Differentiation** | `adjoint` | 10x faster than parameter-shift |
+| **Optimizer** | Adam (LR=0.01) | Adaptive, stable convergence |
+| **Batch Size** | 32 | Balanced speed & stability |
+| **Interface** | `torch` | Seamless PyTorch integration |
+
+---
+
+## 📉 Muhammad Hasnain
